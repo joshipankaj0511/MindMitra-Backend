@@ -3900,3 +3900,93 @@ A sand-writer!
 2025-02-18 16:46:07,753 - INFO - Response Status Code: 429
 2025-02-18 16:46:07,754 - INFO - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '176', 'Connection': 'keep-alive', 'Date': 'Tue, 18 Feb 2025 11:16:08 GMT', 'X-Powered-By': 'AT-5000', 'X-Twilio-Error-Code': '63038', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQe65b98c88c9b9f73629b07b81c3e46c5', 'Twilio-Request-Duration': '0.032', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 30d6f8dde4b5a27a899bbabad07e3ed2.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DEL54-P3', 'X-Amz-Cf-Id': 'QKJHtuo1xvH0hm9iak3h4xpgRZ3zhJIOtwtGMU5rd6XnpZwoKO2qhA=='}
 2025-02-18 16:46:07,823 - INFO - 127.0.0.1 - - [18/Feb/2025 16:46:07] "[35m[1mPOST /whatsapp HTTP/1.1[0m" 500 -
+2025-02-18 19:57:07,745 - INFO - Chatbot server started!
+2025-02-18 19:57:07,788 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-18 19:57:07,788 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-18 19:57:07,791 - INFO -  * Restarting with stat
+2025-02-18 19:57:09,659 - INFO - Chatbot server started!
+2025-02-18 19:57:09,674 - WARNING -  * Debugger is active!
+2025-02-18 19:57:09,679 - INFO -  * Debugger PIN: 259-213-191
+2025-02-18 22:57:35,757 - INFO - Chatbot server started!
+2025-02-18 22:57:35,877 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-18 22:57:35,877 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-18 22:57:35,880 - INFO -  * Restarting with stat
+2025-02-18 22:57:38,818 - INFO - Chatbot server started!
+2025-02-18 22:57:38,859 - WARNING -  * Debugger is active!
+2025-02-18 22:57:38,863 - INFO -  * Debugger PIN: 259-213-191
+2025-02-18 22:59:04,814 - INFO - Received message from whatsapp:+919205086989: hello
+2025-02-18 22:59:04,814 - ERROR - AI Error: unsupported operand type(s) for &: 'tuple' and 'set'
+2025-02-18 22:59:04,814 - INFO - AI Response: Sorry, I am having some trouble understanding that.
+2025-02-18 22:59:04,994 - INFO - -- BEGIN Twilio API Request --
+2025-02-18 22:59:04,994 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0c6e5f73ef5990a0d8012d04c95cd2ba/Messages.json
+2025-02-18 22:59:04,994 - INFO - Headers:
+2025-02-18 22:59:04,994 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-02-18 22:59:04,994 - INFO - Accept : application/json
+2025-02-18 22:59:04,994 - INFO - User-Agent : twilio-python/9.4.5 (Windows AMD64) Python/3.13.1
+2025-02-18 22:59:04,995 - INFO - X-Twilio-Client : python-9.4.5
+2025-02-18 22:59:04,995 - INFO - Accept-Charset : utf-8
+2025-02-18 22:59:04,995 - INFO - -- END Twilio API Request --
+2025-02-18 22:59:05,611 - INFO - Response Status Code: 201
+2025-02-18 22:59:05,612 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '833', 'Connection': 'keep-alive', 'Date': 'Tue, 18 Feb 2025 17:29:05 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQ349f9e4f130a31a9763a40da3a2cfd0d', 'Twilio-Request-Duration': '0.136', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 4ba2a246c70464b34e530fdf92bbbd1c.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DEL54-P3', 'X-Amz-Cf-Id': 'P2PjomTnIQvhzFDcrBva8ZHSbnQEEUq6ygG8Fw9aCJZ2ReBLcXI0vA=='}
+2025-02-18 22:59:05,613 - INFO - 127.0.0.1 - - [18/Feb/2025 22:59:05] "POST /whatsapp HTTP/1.1" 200 -
+2025-02-18 23:05:32,526 - INFO -  * Detected change in 'D:\\MindMitraAI_Bot\\app.py', reloading
+2025-02-18 23:05:33,353 - INFO -  * Restarting with stat
+2025-02-18 23:05:36,168 - INFO - Chatbot server started!
+2025-02-18 23:05:36,195 - WARNING -  * Debugger is active!
+2025-02-18 23:05:36,201 - INFO -  * Debugger PIN: 259-213-191
+2025-02-18 23:06:35,370 - INFO - Chatbot server started!
+2025-02-18 23:06:35,417 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-18 23:06:35,418 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-18 23:06:35,420 - INFO -  * Restarting with stat
+2025-02-18 23:06:38,389 - INFO - Chatbot server started!
+2025-02-18 23:06:38,416 - WARNING -  * Debugger is active!
+2025-02-18 23:06:38,421 - INFO -  * Debugger PIN: 259-213-191
+2025-02-18 23:06:39,774 - INFO - Received message from whatsapp:+919205086989: hello
+2025-02-18 23:06:43,233 - INFO - AI Response: Hello there! It's nice to meet you. I am Gemini, a large multi-modal model, trained by Google. As an AI chatbot, I don't have feelings and emotions like humans. But I am always here to help you with your questions and requests to the best of my abilities. How may I assist you today?
+2025-02-18 23:06:43,467 - INFO - -- BEGIN Twilio API Request --
+2025-02-18 23:06:43,467 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0c6e5f73ef5990a0d8012d04c95cd2ba/Messages.json
+2025-02-18 23:06:43,468 - INFO - Headers:
+2025-02-18 23:06:43,468 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-02-18 23:06:43,468 - INFO - Accept : application/json
+2025-02-18 23:06:43,468 - INFO - User-Agent : twilio-python/9.4.5 (Windows AMD64) Python/3.13.1
+2025-02-18 23:06:43,468 - INFO - X-Twilio-Client : python-9.4.5
+2025-02-18 23:06:43,468 - INFO - Accept-Charset : utf-8
+2025-02-18 23:06:43,468 - INFO - -- END Twilio API Request --
+2025-02-18 23:06:44,045 - INFO - Response Status Code: 201
+2025-02-18 23:06:44,045 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '1065', 'Connection': 'keep-alive', 'Date': 'Tue, 18 Feb 2025 17:36:44 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQe848d8e389555fa7e04ce860be28598d', 'Twilio-Request-Duration': '0.140', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 fc93b40927ecc3b1d5e4fffeca69b042.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DEL54-P3', 'X-Amz-Cf-Id': 'NIiL8Ok0PiRB-LhIGeHGn26fG0LhjS35qxCOncsuhZT7-7YFUN_eBA=='}
+2025-02-18 23:06:44,046 - INFO - 127.0.0.1 - - [18/Feb/2025 23:06:44] "POST /whatsapp HTTP/1.1" 200 -
+2025-02-18 23:10:25,128 - INFO -  * Detected change in 'D:\\MindMitraAI_Bot\\app.py', reloading
+2025-02-18 23:10:27,863 - INFO -  * Restarting with stat
+2025-02-18 23:10:30,949 - INFO - Chatbot server started!
+2025-02-18 23:10:30,973 - WARNING -  * Debugger is active!
+2025-02-18 23:10:30,977 - INFO -  * Debugger PIN: 259-213-191
+2025-02-18 23:10:58,035 - INFO - Chatbot server started!
+2025-02-18 23:10:58,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-18 23:10:58,075 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-18 23:10:58,077 - INFO -  * Restarting with stat
+2025-02-18 23:11:00,799 - INFO - Chatbot server started!
+2025-02-18 23:11:00,821 - WARNING -  * Debugger is active!
+2025-02-18 23:11:00,825 - INFO -  * Debugger PIN: 259-213-191
+2025-02-18 23:11:03,363 - INFO - Received message from whatsapp:+919205086989: namaste
+2025-02-18 23:11:03,364 - INFO - AI Response: Hello! \U0001f60a I'm your AI Mental Health Assistant. I'm here to listen and support you. How are you feeling today? \U0001f499
+2025-02-18 23:11:03,533 - INFO - -- BEGIN Twilio API Request --
+2025-02-18 23:11:03,533 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/AC0c6e5f73ef5990a0d8012d04c95cd2ba/Messages.json
+2025-02-18 23:11:03,533 - INFO - Headers:
+2025-02-18 23:11:03,533 - INFO - Content-Type : application/x-www-form-urlencoded
+2025-02-18 23:11:03,534 - INFO - Accept : application/json
+2025-02-18 23:11:03,534 - INFO - User-Agent : twilio-python/9.4.5 (Windows AMD64) Python/3.13.1
+2025-02-18 23:11:03,534 - INFO - X-Twilio-Client : python-9.4.5
+2025-02-18 23:11:03,534 - INFO - Accept-Charset : utf-8
+2025-02-18 23:11:03,534 - INFO - -- END Twilio API Request --
+2025-02-18 23:11:04,037 - INFO - Response Status Code: 201
+2025-02-18 23:11:04,037 - INFO - Response Headers: {'Content-Type': 'application/json;charset=utf-8', 'Content-Length': '914', 'Connection': 'keep-alive', 'Date': 'Tue, 18 Feb 2025 17:41:04 GMT', 'X-Powered-By': 'AT-5000', 'Twilio-Concurrent-Requests': '1', 'Twilio-Request-Id': 'RQ254e7491834c2afebcbf3d5c89b59e2e', 'Twilio-Request-Duration': '0.153', 'X-Home-Region': 'us1', 'X-Api-Domain': 'api.twilio.com', 'Strict-Transport-Security': 'max-age=31536000', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key, X-Pre-Auth-Context, X-Target-Region', 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag, Twilio-Request-Id', 'Access-Control-Allow-Credentials': 'true', 'X-Shenanigans': 'none', 'X-Cache': 'Miss from cloudfront', 'Via': '1.1 caf03e018ab51e743461ee41e1a16c60.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'DEL54-P3', 'X-Amz-Cf-Id': 'bZQNwggpq_Cb6dOqLDAbuhIM5_F0FQYbEQNB-56zsCvSqNeF3IO2tA=='}
+2025-02-18 23:11:04,038 - INFO - 127.0.0.1 - - [18/Feb/2025 23:11:04] "POST /whatsapp HTTP/1.1" 200 -
+2025-02-18 23:12:00,561 - INFO -  * Detected change in 'D:\\MindMitraAI_Bot\\app.py', reloading
+2025-02-18 23:12:01,180 - INFO -  * Restarting with stat
+2025-02-18 23:12:04,202 - INFO - Chatbot server started!
+2025-02-18 23:12:04,230 - WARNING -  * Debugger is active!
+2025-02-18 23:12:04,234 - INFO -  * Debugger PIN: 259-213-191

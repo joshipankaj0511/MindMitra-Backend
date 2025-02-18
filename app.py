@@ -65,6 +65,16 @@ def split_message(message, limit=1600):
 
 def get_gemini_response(user_message):
     """Fetches AI response from Google Gemini API."""
+
+    greetings = {"hello", "hi", "hey", "namaste", "good morning", "good evening"}
+    
+    if user_message.lower() in greetings:
+        return (
+            "Hello! I'm your AI Mental Health Assistant. "
+            "I'm here to listen and support you. "
+            "How are you feeling today? "
+        )
+    
     if detect_emotion(user_message):
         return detect_emotion(user_message)
 
@@ -76,9 +86,10 @@ def get_gemini_response(user_message):
         ("help", "emergency", "suicide", "urgent", "crisis", "sos"): get_sos_resources,
         ("how are you", "mood"): lambda: "Aapka mood kaisa hai? 😊 (happy, sad, stressed, anxious, angry)",
     }
+    user_words = set(user_message.lower().split())  # ✅ Fast lookup using set
 
     for keywords, response in keywords_response_map.items():
-        if any(word in user_message.lower() for word in keywords):
+        if set(keywords) & user_words:  # ✅ O(n) instead of O(n^2)
             return response()
 
     if user_message.lower() in ["happy", "sad", "stressed", "anxious", "angry"]:
@@ -90,10 +101,10 @@ def get_gemini_response(user_message):
     try:
         model = genai.GenerativeModel("gemini-pro")
         response = model.generate_content(user_message)
-        return response.text.strip() if response.text else "Sorry, I couldn't generate a response."
+        return response.text.strip() if response.text else "I'm here to help, but I didn’t quite get that."
     except Exception as e:
         logging.error(f"AI Error: {e}")
-        return "Sorry, something went wrong!"
+        return "Sorry, I couldn't process your request right now. Try again later."
 
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp_reply():
