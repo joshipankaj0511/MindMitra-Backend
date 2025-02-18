@@ -43,8 +43,6 @@ client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 # Flask App
 app = Flask(__name__)
 
-# User mood tracking dictionary
-#user_moods = {}
 
 def detect_meditation_request(user_message):
     """Detects if user is requesting meditation help."""
